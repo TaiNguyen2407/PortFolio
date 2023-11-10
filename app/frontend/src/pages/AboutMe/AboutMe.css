@@ -1,0 +1,53 @@
+.aboutme {
+    width: 100%;
+    height: 100vh;
+    padding: 0.5rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem; 
+    background-color: #e9eaeb;
+    margin-top: 9rem;
+}
+
+
+.aboutme-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+  
+@media (min-width: 768px) {
+    .aboutme-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+}
+
+.aboutme-text {
+    font-size: 2.25rem;
+    font-weight: 700; 
+    display: inline;
+    border-bottom: 4px solid #ff66b2;
+}
+
+
+.aboutme-text-introduction {
+    font-size: 1.875rem;
+    font-weight: 700; 
+    margin-top: 3rem; 
+}
+  
+
+.aboutme-text-details {
+    padding-top: 0.5rem; /* Equivalent to py-2 */
+    padding-bottom: 0.5rem; /* Equivalent to py-2 */
+    color: #000000; /* Replace with the actual color you want to use */
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    margin-top: 0.75rem; /* Equivalent to mt-3 */
+}
+  
+  
+  
