@@ -12,7 +12,7 @@ const AboutMe = () => {
                 About Me
               </p>
               <h2 className="aboutme-text-introduction">
-                Hello! I'm Loc, a{" "}
+                Hello! I'm Tai, a{" "}
                 <RoughNotation
                   type="highlight"
                   show={true}
