@@ -42,11 +42,11 @@
   
 
 .aboutme-text-details {
-    padding-top: 0.5rem; /* Equivalent to py-2 */
-    padding-bottom: 0.5rem; /* Equivalent to py-2 */
-    color: #000000; /* Replace with the actual color you want to use */
-    font-size: 1.125rem; /* Equivalent to text-lg */
-    margin-top: 0.75rem; /* Equivalent to mt-3 */
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem; 
+    color: #000000; 
+    font-size: 1.125rem; 
+    margin-top: 0.75rem;
 }
   
   
