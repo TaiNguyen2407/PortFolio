@@ -10,6 +10,11 @@ This is a portfolio developed under Clean code and DX developer Experience cours
 ### Installation
 * Clone the project
 * Navigate to project folder
-* Navigate 1 terminal to frontend folder -> run npm i -> then npm start
-* Navigate 1 terminal to backend folder -> run pip install -r requirements.txt -> then python app.py
+* Navigate 1 terminal to frontend folder:
+  * run npm install
+  * run npm start
+* Navigate 1 terminal to backend folder:
+  * run python app.py
+
+** Note: backend is incompleted at the moment, therefore, you can run frontend alone to see current result.  
 
