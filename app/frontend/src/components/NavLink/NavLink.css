@@ -1,0 +1,17 @@
+.nav-link-container {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    font-size: 2rem;
+    color: rgb(241, 149, 158)
+}
