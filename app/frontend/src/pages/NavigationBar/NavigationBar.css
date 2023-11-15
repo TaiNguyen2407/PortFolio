@@ -1,0 +1,13 @@
+.nav-container {
+    padding: 0.2rem;
+    background-color: rgb(65, 65, 65);
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
