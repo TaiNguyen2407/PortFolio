@@ -7,6 +7,7 @@ import AboutMe from './pages/AboutMe/AboutMe';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import NavigationBar from './pages/NavigationBar/NavigationBar';
+import MySkills from './pages/MySkills/MySkills';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,7 +27,7 @@ export default function App() {
           <Route index path='' element={<Home />} />
           <Route path='aboutme' element={<AboutMe />} />
           <Route path='projects' element={<Projects />} />
-          <Route path='skills' element={<AboutMe />} />  { /* Missing skills page */ }
+          <Route path='skills' element={<MySkills />} />  { /* Missing skills page */ }
           <Route path='contact' element={<Contact />} />
         </Route>
       </Routes>
