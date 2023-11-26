@@ -1,20 +1,14 @@
 import React from 'react';
 import TechStackIcon from '../../components/TechStackIcon/TechStackIcon';
-import './MySkills.css'; // Make sure to adjust the path
-
+import './MySkills.css'; 
+import { TechStackIcons } from '../../constants';
 
 
 const MySkills: React.FC = () => {
   return (
-    <div className="grid-container">
-      <TechStackIcon imgUrl={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'} name={'HTML'} />
-      <TechStackIcon imgUrl={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'} name={'HTML'} />
-      <TechStackIcon imgUrl={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'} name={'HTML'} />
-      <TechStackIcon imgUrl={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'} name={'HTML'} />
-      <TechStackIcon imgUrl={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'} name={'HTML'} />
-      <TechStackIcon imgUrl={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'} name={'HTML'} />
-
-    </div>
+      <div className="grid-container">
+        {TechStackIcons.map((icon) => <TechStackIcon imgUrl={icon.imgUrl} name={icon.name} />)}
+      </div>
   );
 };
 

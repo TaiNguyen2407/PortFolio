@@ -1,6 +1,6 @@
 import "./TechStackIcon.css"
 
-interface TechStackIconProps {
+export interface TechStackIconProps {
     imgUrl: string;
     name: string;
 }
