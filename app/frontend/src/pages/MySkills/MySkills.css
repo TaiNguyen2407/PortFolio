@@ -4,3 +4,24 @@
     gap: 2rem;
     margin: 15rem 10rem;
 }
+
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: minmax(0, 1fr);
+        margin: 1rem;
+    }
+}
