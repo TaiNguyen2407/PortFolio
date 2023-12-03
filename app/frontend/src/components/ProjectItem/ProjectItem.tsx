@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react"
+import { getGithubApi } from "../../api/api"
+import LanguageTag from "../LanguageTag/LanguageTag"
 import "./ProjectItem.css"
 import { Repo } from "./type"
 
@@ -6,11 +9,26 @@ interface ProjectItemProps {
 }
 
 const ProjectItem = ({repo}: ProjectItemProps) => {
-    console.log(repo.html_url);
-    
+    const [programmingLanguages, setProgrammingLanguages] = useState<string[]>([]);
+
+    const getProgrammingLanguagesFromRepo = async () => {
+        const allProgrammingLanguagesFromRepo = await getGithubApi( `repos/TaiNguyen2407/${repo.name}/languages`);
+        setProgrammingLanguages(Object.keys(allProgrammingLanguagesFromRepo));
+    }
+
+    useEffect(() => {
+        getProgrammingLanguagesFromRepo();
+    }, []);
+
     return (
         <div className="project-item">
             <h3 className="project-item-name">{repo.name}</h3>
+            <div className="project-item-languages">
+            {programmingLanguages.map((language) => (
+                <LanguageTag language={language} key={language} />
+            ))}
+            </div>
+            
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="project-item-link">
                 View on GitHub
             </a>
