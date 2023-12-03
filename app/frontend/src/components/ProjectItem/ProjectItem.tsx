@@ -12,8 +12,13 @@ const ProjectItem = ({repo}: ProjectItemProps) => {
     const [programmingLanguages, setProgrammingLanguages] = useState<string[]>([]);
 
     const getProgrammingLanguagesFromRepo = async () => {
-        const allProgrammingLanguagesFromRepo = await getGithubApi( `repos/TaiNguyen2407/${repo.name}/languages`);
-        setProgrammingLanguages(Object.keys(allProgrammingLanguagesFromRepo));
+        try {
+            const allProgrammingLanguagesFromRepo = await getGithubApi( `repos/TaiNguyen2407/${repo.name}/languages`);
+            setProgrammingLanguages(Object.keys(allProgrammingLanguagesFromRepo));
+        } catch (error) {
+            console.error('Error fetching programming languges in repo:', error);
+        }
+        
     }
 
     useEffect(() => {
@@ -28,7 +33,6 @@ const ProjectItem = ({repo}: ProjectItemProps) => {
                 <LanguageTag language={language} key={language} />
             ))}
             </div>
-            
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="project-item-link">
                 View on GitHub
             </a>
