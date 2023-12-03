@@ -1,0 +1,13 @@
+.tech-stack-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    transition: ease-in 0.3s;
+    border-radius: 0.75rem;
+}
+
+.tech-stack-icon-container:hover {
+    transform: scale(1.1);
+}
