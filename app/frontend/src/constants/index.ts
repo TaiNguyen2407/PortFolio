@@ -52,4 +52,4 @@ export const TechStackIcons : TechStackIconProps[] = [
 ];
   
 
-export const BaseUrl = 'https://api.github.com/users/TaiNguyen2407'
+export const BaseUrl = 'https://api.github.com/'
