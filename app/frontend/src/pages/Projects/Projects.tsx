@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllGithubRepos } from "../../api/api";
+import { getGithubApi } from "../../api/api";
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
 import { Repo } from "../../components/ProjectItem/type";
 import "./Projects.css"
@@ -9,7 +9,7 @@ const Projects = () => {
 
     const fetchAllGithubRepos = async () => {
         try {
-          const githubRepos = await getAllGithubRepos(); 
+          const githubRepos = await getGithubApi('users/TaiNguyen2407/repos'); 
           setRepos(githubRepos);
         } catch (error) {
           console.error('Error fetching GitHub repos:', error);
