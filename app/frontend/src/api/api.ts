@@ -1,8 +1,8 @@
 import { BaseUrl } from "../constants";
 
-export async function getAllGithubRepos() {
+export async function getGithubApi(endpoint: string) {
     try {
-        const response = await fetch(BaseUrl + `/repos`, {
+        const response = await fetch(BaseUrl + `${endpoint}`, {
             method: "GET",
             headers: {
                 'Content-Type' : 'application/json'
