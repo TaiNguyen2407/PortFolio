@@ -51,3 +51,5 @@ export const TechStackIcons : TechStackIconProps[] = [
     }
 ];
   
+
+export const BaseUrl = 'https://api.github.com/'

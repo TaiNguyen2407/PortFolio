@@ -1,0 +1,25 @@
+.project-item {
+    border: 0.1rem solid #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+    
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item-name {
+    margin-bottom: 0.6rem;
+}
+
+.project-item-link {
+    color: #3498db;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.6rem;
+}
+
+.project-item-languages {
+    margin-top: 0.6rem;
+}
